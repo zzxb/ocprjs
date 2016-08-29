@@ -49,4 +49,6 @@
 @property(strong,nonatomic) NSString *stuName;
 
 + (Student *) instance;
+- (id) initWithStuId:(int) stuId
+          andStuName:(NSString *)stuName;
 @end

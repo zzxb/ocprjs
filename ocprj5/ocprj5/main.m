@@ -23,6 +23,7 @@ int main(int argc, const char * argv[]) {
          */
         //Student *stu = [[Student alloc] init];
         Student *stu = [Student instance];
+        Student *stu2 = [[Student alloc] initWithStuId:1 andStuName:@"KKK"];
         stu.stuID = 1;
         stu.stuName = @"zhengbo";
         NSString *str = [[NSString stringWithFormat:@"%d",stu.stuID]stringByAppendingString:stu.stuName];
