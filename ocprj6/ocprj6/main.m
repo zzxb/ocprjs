@@ -49,6 +49,11 @@ void test2(){
     NSString *str2 = [str stringByAppendingString:@"Shandong"];
     NSLog(@"%@",str2);
     
+    //字符串拼接2
+    NSString *str3 = [NSString stringWithFormat: @"城市信息为： %@ 市 %@ 省",str,str2];
+    NSLog(@"%@",str3);
+    
+    
 }
 
 //字符串搜索
