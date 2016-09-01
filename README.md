@@ -11,7 +11,7 @@
 
 #### Objective-C干什么用？
 
-主要是用于IOS设备的开发语言SpringMVC<br/>
+主要是用于IOS设备和MACOS应用程序的开发语言<br/>
 
 #### 案例集面向谁？
 
