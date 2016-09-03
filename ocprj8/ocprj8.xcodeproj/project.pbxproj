@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E6B6E9F81D7AC19000AAC8A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6E9F71D7AC19000AAC8A2 /* main.m */; };
+		E6B6EA041D7AC28300AAC8A2 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA031D7AC28300AAC8A2 /* Person.m */; };
+		E6B6EA071D7AC2F000AAC8A2 /* CEO.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA061D7AC2F000AAC8A2 /* CEO.m */; };
+		E6B6EA0A1D7AC30B00AAC8A2 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA091D7AC30B00AAC8A2 /* Employee.m */; };
+		E6B6EA0D1D7AC32C00AAC8A2 /* SoftEmp.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA0C1D7AC32C00AAC8A2 /* SoftEmp.m */; };
+		E6B6EA101D7AC34400AAC8A2 /* PM.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA0F1D7AC34400AAC8A2 /* PM.m */; };
+		E6B6EA131D7AC35C00AAC8A2 /* CPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA121D7AC35C00AAC8A2 /* CPerson.m */; };
+		E6B6EA161D7AC37500AAC8A2 /* OPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA151D7AC37500AAC8A2 /* OPerson.m */; };
+		E6B6EA191D7AC3A800AAC8A2 /* IndPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA181D7AC3A800AAC8A2 /* IndPerson.m */; };
+		E6B6EA1D1D7AC40F00AAC8A2 /* FanJun.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA1C1D7AC40F00AAC8A2 /* FanJun.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +34,24 @@
 /* Begin PBXFileReference section */
 		E6B6E9F41D7AC19000AAC8A2 /* ocprj8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ocprj8; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B6E9F71D7AC19000AAC8A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6B6EA021D7AC28300AAC8A2 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = pojo/Person.h; sourceTree = "<group>"; };
+		E6B6EA031D7AC28300AAC8A2 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = pojo/Person.m; sourceTree = "<group>"; };
+		E6B6EA051D7AC2F000AAC8A2 /* CEO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEO.h; path = pojo/CEO.h; sourceTree = "<group>"; };
+		E6B6EA061D7AC2F000AAC8A2 /* CEO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CEO.m; path = pojo/CEO.m; sourceTree = "<group>"; };
+		E6B6EA081D7AC30B00AAC8A2 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Employee.h; path = pojo/Employee.h; sourceTree = "<group>"; };
+		E6B6EA091D7AC30B00AAC8A2 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Employee.m; path = pojo/Employee.m; sourceTree = "<group>"; };
+		E6B6EA0B1D7AC32C00AAC8A2 /* SoftEmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoftEmp.h; path = pojo/SoftEmp.h; sourceTree = "<group>"; };
+		E6B6EA0C1D7AC32C00AAC8A2 /* SoftEmp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoftEmp.m; path = pojo/SoftEmp.m; sourceTree = "<group>"; };
+		E6B6EA0E1D7AC34400AAC8A2 /* PM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PM.h; path = pojo/PM.h; sourceTree = "<group>"; };
+		E6B6EA0F1D7AC34400AAC8A2 /* PM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PM.m; path = pojo/PM.m; sourceTree = "<group>"; };
+		E6B6EA111D7AC35C00AAC8A2 /* CPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPerson.h; path = pojo/CPerson.h; sourceTree = "<group>"; };
+		E6B6EA121D7AC35C00AAC8A2 /* CPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPerson.m; path = pojo/CPerson.m; sourceTree = "<group>"; };
+		E6B6EA141D7AC37500AAC8A2 /* OPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OPerson.h; path = pojo/OPerson.h; sourceTree = "<group>"; };
+		E6B6EA151D7AC37500AAC8A2 /* OPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OPerson.m; path = pojo/OPerson.m; sourceTree = "<group>"; };
+		E6B6EA171D7AC3A800AAC8A2 /* IndPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndPerson.h; path = pojo/IndPerson.h; sourceTree = "<group>"; };
+		E6B6EA181D7AC3A800AAC8A2 /* IndPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndPerson.m; path = pojo/IndPerson.m; sourceTree = "<group>"; };
+		E6B6EA1B1D7AC40F00AAC8A2 /* FanJun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FanJun.h; path = service/FanJun.h; sourceTree = "<group>"; };
+		E6B6EA1C1D7AC40F00AAC8A2 /* FanJun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FanJun.m; path = service/FanJun.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +84,43 @@
 		E6B6E9F61D7AC19000AAC8A2 /* ocprj8 */ = {
 			isa = PBXGroup;
 			children = (
+				E6B6EA1A1D7AC3CD00AAC8A2 /* service */,
+				E6B6E9FE1D7AC1C500AAC8A2 /* domain */,
 				E6B6E9F71D7AC19000AAC8A2 /* main.m */,
 			);
 			path = ocprj8;
+			sourceTree = "<group>";
+		};
+		E6B6E9FE1D7AC1C500AAC8A2 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				E6B6EA021D7AC28300AAC8A2 /* Person.h */,
+				E6B6EA031D7AC28300AAC8A2 /* Person.m */,
+				E6B6EA051D7AC2F000AAC8A2 /* CEO.h */,
+				E6B6EA061D7AC2F000AAC8A2 /* CEO.m */,
+				E6B6EA081D7AC30B00AAC8A2 /* Employee.h */,
+				E6B6EA091D7AC30B00AAC8A2 /* Employee.m */,
+				E6B6EA0B1D7AC32C00AAC8A2 /* SoftEmp.h */,
+				E6B6EA0C1D7AC32C00AAC8A2 /* SoftEmp.m */,
+				E6B6EA0E1D7AC34400AAC8A2 /* PM.h */,
+				E6B6EA0F1D7AC34400AAC8A2 /* PM.m */,
+				E6B6EA111D7AC35C00AAC8A2 /* CPerson.h */,
+				E6B6EA121D7AC35C00AAC8A2 /* CPerson.m */,
+				E6B6EA141D7AC37500AAC8A2 /* OPerson.h */,
+				E6B6EA151D7AC37500AAC8A2 /* OPerson.m */,
+				E6B6EA171D7AC3A800AAC8A2 /* IndPerson.h */,
+				E6B6EA181D7AC3A800AAC8A2 /* IndPerson.m */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		E6B6EA1A1D7AC3CD00AAC8A2 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				E6B6EA1B1D7AC40F00AAC8A2 /* FanJun.h */,
+				E6B6EA1C1D7AC40F00AAC8A2 /* FanJun.m */,
+			);
+			name = service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +179,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B6EA101D7AC34400AAC8A2 /* PM.m in Sources */,
+				E6B6EA071D7AC2F000AAC8A2 /* CEO.m in Sources */,
+				E6B6EA191D7AC3A800AAC8A2 /* IndPerson.m in Sources */,
+				E6B6EA1D1D7AC40F00AAC8A2 /* FanJun.m in Sources */,
+				E6B6EA161D7AC37500AAC8A2 /* OPerson.m in Sources */,
+				E6B6EA0A1D7AC30B00AAC8A2 /* Employee.m in Sources */,
+				E6B6EA131D7AC35C00AAC8A2 /* CPerson.m in Sources */,
+				E6B6EA041D7AC28300AAC8A2 /* Person.m in Sources */,
 				E6B6E9F81D7AC19000AAC8A2 /* main.m in Sources */,
+				E6B6EA0D1D7AC32C00AAC8A2 /* SoftEmp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
