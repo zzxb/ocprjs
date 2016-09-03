@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E6B6EAFF1D7B12CF00AAC8A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EAFE1D7B12CF00AAC8A2 /* main.m */; };
+		E6B6EB091D7B13EC00AAC8A2 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EB081D7B13EC00AAC8A2 /* Product.m */; };
+		E6B6EB0C1D7B142A00AAC8A2 /* ProductService.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EB0B1D7B142A00AAC8A2 /* ProductService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		E6B6EAFB1D7B12CF00AAC8A2 /* ocprj16 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ocprj16; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B6EAFE1D7B12CF00AAC8A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6B6EB071D7B13EC00AAC8A2 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Product.h; path = pojo/Product.h; sourceTree = "<group>"; };
+		E6B6EB081D7B13EC00AAC8A2 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Product.m; path = pojo/Product.m; sourceTree = "<group>"; };
+		E6B6EB0A1D7B142A00AAC8A2 /* ProductService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductService.h; path = service/ProductService.h; sourceTree = "<group>"; };
+		E6B6EB0B1D7B142A00AAC8A2 /* ProductService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductService.m; path = service/ProductService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 		E6B6EB051D7B12F900AAC8A2 /* pojo */ = {
 			isa = PBXGroup;
 			children = (
+				E6B6EB071D7B13EC00AAC8A2 /* Product.h */,
+				E6B6EB081D7B13EC00AAC8A2 /* Product.m */,
 			);
 			name = pojo;
 			sourceTree = "<group>";
@@ -74,6 +82,8 @@
 		E6B6EB061D7B130100AAC8A2 /* service */ = {
 			isa = PBXGroup;
 			children = (
+				E6B6EB0A1D7B142A00AAC8A2 /* ProductService.h */,
+				E6B6EB0B1D7B142A00AAC8A2 /* ProductService.m */,
 			);
 			name = service;
 			sourceTree = "<group>";
@@ -134,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B6EB0C1D7B142A00AAC8A2 /* ProductService.m in Sources */,
 				E6B6EAFF1D7B12CF00AAC8A2 /* main.m in Sources */,
+				E6B6EB091D7B13EC00AAC8A2 /* Product.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
