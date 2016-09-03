@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E6B6EA741D7B07B000AAC8A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA731D7B07B000AAC8A2 /* main.m */; };
+		E6B6EA7D1D7B082100AAC8A2 /* PlayerEmp.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA7C1D7B082100AAC8A2 /* PlayerEmp.m */; };
+		E6B6EA801D7B085E00AAC8A2 /* Ployer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA7F1D7B085E00AAC8A2 /* Ployer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		E6B6EA701D7B07B000AAC8A2 /* ocprj11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ocprj11; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B6EA731D7B07B000AAC8A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6B6EA7B1D7B082100AAC8A2 /* PlayerEmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerEmp.h; path = pojo/PlayerEmp.h; sourceTree = "<group>"; };
+		E6B6EA7C1D7B082100AAC8A2 /* PlayerEmp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerEmp.m; path = pojo/PlayerEmp.m; sourceTree = "<group>"; };
+		E6B6EA7E1D7B085E00AAC8A2 /* Ployer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ployer.h; path = pojo/Ployer.h; sourceTree = "<group>"; };
+		E6B6EA7F1D7B085E00AAC8A2 /* Ployer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ployer.m; path = pojo/Ployer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,21 @@
 		E6B6EA721D7B07B000AAC8A2 /* ocprj11 */ = {
 			isa = PBXGroup;
 			children = (
+				E6B6EA7A1D7B07D400AAC8A2 /* pojo */,
 				E6B6EA731D7B07B000AAC8A2 /* main.m */,
 			);
 			path = ocprj11;
+			sourceTree = "<group>";
+		};
+		E6B6EA7A1D7B07D400AAC8A2 /* pojo */ = {
+			isa = PBXGroup;
+			children = (
+				E6B6EA7B1D7B082100AAC8A2 /* PlayerEmp.h */,
+				E6B6EA7C1D7B082100AAC8A2 /* PlayerEmp.m */,
+				E6B6EA7E1D7B085E00AAC8A2 /* Ployer.h */,
+				E6B6EA7F1D7B085E00AAC8A2 /* Ployer.m */,
+			);
+			name = pojo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +137,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6B6EA741D7B07B000AAC8A2 /* main.m in Sources */,
+				E6B6EA801D7B085E00AAC8A2 /* Ployer.m in Sources */,
+				E6B6EA7D1D7B082100AAC8A2 /* PlayerEmp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
