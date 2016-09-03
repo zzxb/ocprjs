@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E6B6EA481D7B024500AAC8A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA471D7B024500AAC8A2 /* main.m */; };
+		E6B6EA531D7B037800AAC8A2 /* CEO.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA521D7B037800AAC8A2 /* CEO.m */; };
+		E6B6EA591D7B041A00AAC8A2 /* SalerEmp.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA581D7B041A00AAC8A2 /* SalerEmp.m */; };
+		E6B6EA5F1D7B04BA00AAC8A2 /* ItShiXi.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA5E1D7B04BA00AAC8A2 /* ItShiXi.m */; };
+		E6B6EA621D7B05B700AAC8A2 /* ItStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA611D7B05B700AAC8A2 /* ItStudent.m */; };
+		E6B6EA661D7B063200AAC8A2 /* SoftEmp.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B6EA651D7B063200AAC8A2 /* SoftEmp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,19 @@
 /* Begin PBXFileReference section */
 		E6B6EA441D7B024500AAC8A2 /* ocprj10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ocprj10; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6B6EA471D7B024500AAC8A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E6B6EA4F1D7B030300AAC8A2 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Employee.h; path = pojo/Employee.h; sourceTree = "<group>"; };
+		E6B6EA501D7B033A00AAC8A2 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = pojo/Student.h; sourceTree = "<group>"; };
+		E6B6EA511D7B037800AAC8A2 /* CEO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CEO.h; path = pojo/CEO.h; sourceTree = "<group>"; };
+		E6B6EA521D7B037800AAC8A2 /* CEO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CEO.m; path = pojo/CEO.m; sourceTree = "<group>"; };
+		E6B6EA571D7B041A00AAC8A2 /* SalerEmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalerEmp.h; path = pojo/SalerEmp.h; sourceTree = "<group>"; };
+		E6B6EA581D7B041A00AAC8A2 /* SalerEmp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalerEmp.m; path = pojo/SalerEmp.m; sourceTree = "<group>"; };
+		E6B6EA5D1D7B04BA00AAC8A2 /* ItShiXi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItShiXi.h; path = pojo/ItShiXi.h; sourceTree = "<group>"; };
+		E6B6EA5E1D7B04BA00AAC8A2 /* ItShiXi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItShiXi.m; path = pojo/ItShiXi.m; sourceTree = "<group>"; };
+		E6B6EA601D7B05B700AAC8A2 /* ItStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ItStudent.h; path = pojo/ItStudent.h; sourceTree = "<group>"; };
+		E6B6EA611D7B05B700AAC8A2 /* ItStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ItStudent.m; path = pojo/ItStudent.m; sourceTree = "<group>"; };
+		E6B6EA631D7B05F700AAC8A2 /* ShiXIEmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShiXIEmp.h; path = pojo/ShiXIEmp.h; sourceTree = "<group>"; };
+		E6B6EA641D7B063200AAC8A2 /* SoftEmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoftEmp.h; path = pojo/SoftEmp.h; sourceTree = "<group>"; };
+		E6B6EA651D7B063200AAC8A2 /* SoftEmp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoftEmp.m; path = pojo/SoftEmp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +75,30 @@
 		E6B6EA461D7B024500AAC8A2 /* ocprj10 */ = {
 			isa = PBXGroup;
 			children = (
+				E6B6EA4E1D7B026C00AAC8A2 /* pojo */,
 				E6B6EA471D7B024500AAC8A2 /* main.m */,
 			);
 			path = ocprj10;
+			sourceTree = "<group>";
+		};
+		E6B6EA4E1D7B026C00AAC8A2 /* pojo */ = {
+			isa = PBXGroup;
+			children = (
+				E6B6EA601D7B05B700AAC8A2 /* ItStudent.h */,
+				E6B6EA611D7B05B700AAC8A2 /* ItStudent.m */,
+				E6B6EA4F1D7B030300AAC8A2 /* Employee.h */,
+				E6B6EA501D7B033A00AAC8A2 /* Student.h */,
+				E6B6EA511D7B037800AAC8A2 /* CEO.h */,
+				E6B6EA521D7B037800AAC8A2 /* CEO.m */,
+				E6B6EA571D7B041A00AAC8A2 /* SalerEmp.h */,
+				E6B6EA581D7B041A00AAC8A2 /* SalerEmp.m */,
+				E6B6EA5D1D7B04BA00AAC8A2 /* ItShiXi.h */,
+				E6B6EA5E1D7B04BA00AAC8A2 /* ItShiXi.m */,
+				E6B6EA631D7B05F700AAC8A2 /* ShiXIEmp.h */,
+				E6B6EA641D7B063200AAC8A2 /* SoftEmp.h */,
+				E6B6EA651D7B063200AAC8A2 /* SoftEmp.m */,
+			);
+			name = pojo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6B6EA481D7B024500AAC8A2 /* main.m in Sources */,
+				E6B6EA5F1D7B04BA00AAC8A2 /* ItShiXi.m in Sources */,
+				E6B6EA661D7B063200AAC8A2 /* SoftEmp.m in Sources */,
+				E6B6EA591D7B041A00AAC8A2 /* SalerEmp.m in Sources */,
+				E6B6EA531D7B037800AAC8A2 /* CEO.m in Sources */,
+				E6B6EA621D7B05B700AAC8A2 /* ItStudent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
