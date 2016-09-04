@@ -1,0 +1,4 @@
+platform :osx, '10.9'
+target 'ocprj17' do
+pod 'JSONKit', '~> 1.4'
+end
