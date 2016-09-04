@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A6CC9A4045CF51DC1ECB3BF /* libPods-ocprj17.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6857DE151B3588D93648EDBB /* libPods-ocprj17.a */; };
+		E652B57C1D7C121800AFC119 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E652B57B1D7C121800AFC119 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E652B5761D7C121800AFC119 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11D30728A3CDA02B293DEE41 /* Pods-ocprj17.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocprj17.release.xcconfig"; path = "Pods/Target Support Files/Pods-ocprj17/Pods-ocprj17.release.xcconfig"; sourceTree = "<group>"; };
+		222E8757DA392E1DEA4B8EC8 /* Pods-ocprj17.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocprj17.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ocprj17/Pods-ocprj17.debug.xcconfig"; sourceTree = "<group>"; };
+		6857DE151B3588D93648EDBB /* libPods-ocprj17.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ocprj17.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E652B5781D7C121800AFC119 /* ocprj17 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ocprj17; sourceTree = BUILT_PRODUCTS_DIR; };
+		E652B57B1D7C121800AFC119 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E652B5751D7C121800AFC119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A6CC9A4045CF51DC1ECB3BF /* libPods-ocprj17.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E652B56F1D7C121800AFC119 = {
+			isa = PBXGroup;
+			children = (
+				E652B57A1D7C121800AFC119 /* ocprj17 */,
+				E652B5791D7C121800AFC119 /* Products */,
+				EE39D636AFA88FD6684E1606 /* Pods */,
+				E9E6C8810F1F190AD8E2B167 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E652B5791D7C121800AFC119 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E652B5781D7C121800AFC119 /* ocprj17 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E652B57A1D7C121800AFC119 /* ocprj17 */ = {
+			isa = PBXGroup;
+			children = (
+				E652B57B1D7C121800AFC119 /* main.m */,
+			);
+			path = ocprj17;
+			sourceTree = "<group>";
+		};
+		E9E6C8810F1F190AD8E2B167 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6857DE151B3588D93648EDBB /* libPods-ocprj17.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE39D636AFA88FD6684E1606 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				222E8757DA392E1DEA4B8EC8 /* Pods-ocprj17.debug.xcconfig */,
+				11D30728A3CDA02B293DEE41 /* Pods-ocprj17.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E652B5771D7C121800AFC119 /* ocprj17 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E652B57F1D7C121800AFC119 /* Build configuration list for PBXNativeTarget "ocprj17" */;
+			buildPhases = (
+				AFF94C0F4EBB86EC14FD9349 /* [CP] Check Pods Manifest.lock */,
+				E652B5741D7C121800AFC119 /* Sources */,
+				E652B5751D7C121800AFC119 /* Frameworks */,
+				E652B5761D7C121800AFC119 /* CopyFiles */,
+				01B5CE1B78BB4A64FD0BC5DC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ocprj17;
+			productName = ocprj17;
+			productReference = E652B5781D7C121800AFC119 /* ocprj17 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E652B5701D7C121800AFC119 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zzxb;
+				TargetAttributes = {
+					E652B5771D7C121800AFC119 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = E652B5731D7C121800AFC119 /* Build configuration list for PBXProject "ocprj17" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E652B56F1D7C121800AFC119;
+			productRefGroup = E652B5791D7C121800AFC119 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E652B5771D7C121800AFC119 /* ocprj17 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B5CE1B78BB4A64FD0BC5DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ocprj17/Pods-ocprj17-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFF94C0F4EBB86EC14FD9349 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E652B5741D7C121800AFC119 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E652B57C1D7C121800AFC119 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E652B57D1D7C121800AFC119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E652B57E1D7C121800AFC119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E652B5801D7C121800AFC119 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 222E8757DA392E1DEA4B8EC8 /* Pods-ocprj17.debug.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E652B5811D7C121800AFC119 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D30728A3CDA02B293DEE41 /* Pods-ocprj17.release.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E652B5731D7C121800AFC119 /* Build configuration list for PBXProject "ocprj17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E652B57D1D7C121800AFC119 /* Debug */,
+				E652B57E1D7C121800AFC119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E652B57F1D7C121800AFC119 /* Build configuration list for PBXNativeTarget "ocprj17" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E652B5801D7C121800AFC119 /* Debug */,
+				E652B5811D7C121800AFC119 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E652B5701D7C121800AFC119 /* Project object */;
+}
