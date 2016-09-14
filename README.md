@@ -325,6 +325,8 @@ StudentService *myService = [[StudentService alloc] init];
 BOOL isLogin = [myService loginFromForStuName:@"zzxb" andStuPwd:@"qaz123"];
 ```
 
+###### super相当于java中的super,self相当于java中的this.
+
 调用静态方法<br/>
 
 ```Objective-C
