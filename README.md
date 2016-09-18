@@ -342,6 +342,161 @@ stu.stuName = @"zzxb";
 
 ##### 总结：调用类属性使用点语法(.),调用类方法使用[],实例化类使用alloc
 
+#### ocprj6之常用字符串操作函数 
+
+常见的字符串创建
+
+```Objective-C
+NSString *str = @"abcdefg";
+```
+
+指针字符类型的转换为字符串
+
+```Objective-C
+char *text = "一二三四五六七八九十";
+str = [NSString stringWithUTF8String:text];
+```
+
+将URL请求响应转换为字符串
+
+```Objective-C
+NSURL *url = [NSURL URLWithString:@"http://www.weather.com.cn/adat/sk/101010100.html"];
+NSString *strText = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+```
+
+将字符串转换为全大写字母/全部小写/首字母大写
+
+```Objective-C
+//转换成大写
+NSLog(@"大写: %@", [str uppercaseString]);
+    
+//转换成小写
+NSLog(@"小写: %@", [str lowercaseString]);
+    
+//转换成首字母大写
+NSLog(@"首字母大写: %@", [str capitalizedString]);
+```
+
+判断两个字符串是否相等
+
+```Objective-C
+BOOL result = [@"abc" isEqualToString:@"ABC"];
+```
+
+字符串连接
+
+```Objective-C
+NSString *str2 = [str stringByAppendingString:@"Shandong"];
+
+NSString *str3 = [NSString stringWithFormat: @"城市信息为： %@ 市 %@ 省",str,str2];
+
+```
+
+字符串搜索
+
+```Objective-C
+    NSString *str = @"ShangHai123456";
+    
+    NSLog(@"是否已Sh开头%i", [str hasPrefix:@"Sh"]);
+    NSLog(@"是否已56结尾%i", [str hasSuffix:@"56"]);
+    
+    //查找字符串所在位置
+    NSRange range = [str rangeOfString:@"i12"];
+    
+    if (range.location == NSNotFound)
+    {
+        NSLog(@"不能找到");
+    }
+    else
+    {
+        NSLog(@"找到的范围: %@", NSStringFromRange(range));
+    }    
+
+```
+
+字符串截取
+
+```Objective-C
+    NSString *str = @"123456789";
+    
+    NSLog(@"%@", [str substringFromIndex:3]);
+    
+    NSLog(@"%@", [str substringToIndex:3]);
+    
+    NSRange range = NSMakeRange(4, 5);
+    NSLog(@"%@", [str substringWithRange:range]);
+    
+    NSString *str2 = @"1,2,3-4-5-6,7,8,9";
+    NSArray *array = [str2 componentsSeparatedByString:@"-"];
+    for (NSString *var in array) {
+        NSLog(@"%@",var);
+    }
+    
+    NSString *str3 = [array objectAtIndex:0];
+    NSLog(@"%@", str3);
+
+```
+
+字符串转换
+
+```Objective-C
+    NSString *str = @"123";
+    
+    int a = [str intValue];
+    NSLog(@"%i", a);
+    
+    float b = [str floatValue];
+    NSLog(@"%.2f", b);
+    
+    //返回字符串的个数
+    NSString *str1 = @"我是字符串!";
+    NSLog(@"%zi", [str1 length]);
+    
+    //取出对应的字符串
+    unichar temp = [@"abcdefg" characterAtIndex:3];
+    NSLog(@"%c", temp);
+    
+    //字符串转换为字符
+    const char *s = [@"uvwxyz" UTF8String];
+    NSLog(@"%s", s);
+
+```
+
+### ocprj7之数组
+
+##### 不可变数组
+
+创建数组
+
+```Objective-C
+        // 创建数组两种方式
+        NSArray *array = @[@"one",@"two",@"three"];
+        
+         NSArray *array2 = nil;
+        // 注意最后的nil只是一个结束标识，而不是其中的一个元素
+        array2 = [NSArray arrayWithObjects:@"one",@"two",@"three",nil];
+
+```
+
+取元素(查)
+
+```Objective-C
+        NSLog(@"%@", array[2]);
+        // 取出相关元素的另一种写法
+        NSLog(@"%@", [array objectAtIndex:1]);
+        
+        //第一个元素
+        NSLog(@"%@", [array firstObject]);
+        //最后一个元素
+        NSLog(@"%@", [array lastObject]);
+        
+```
+
+获取大小
+
+```Objective-C
+        NSLog(@"%lu", [array count]);
+```
 
 ## 修改日志
 - 2016-8-29:
