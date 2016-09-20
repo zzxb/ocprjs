@@ -17,6 +17,7 @@ int main(int argc, const char * argv[]) {
          用key和value进行对应（键值）
          kvc 键值编码
          */
+        NSDictionary *map = [[NSDictionary alloc] init];
         NSDictionary *dict1 = [NSDictionary dictionaryWithObject:@"1" forKey:@"a"];
         NSDictionary *dict2 = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"1",@"2",@"3", nil] forKeys:[NSArray arrayWithObjects:@"a",@"b",@"c", nil]];
         
@@ -48,7 +49,7 @@ int main(int argc, const char * argv[]) {
         NSEnumerator *en = [dict2 keyEnumerator];
         id keyvalue = nil;
         while (keyvalue = [en nextObject]) {
-            NSLog(@"key - %@",keyvalue);
+            NSLog(@"key:%@-value:%@",keyvalue,[dict2 valueForKey:keyvalue]);
         }
         
         [dict2 enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
@@ -57,7 +58,8 @@ int main(int argc, const char * argv[]) {
         
         NSMutableDictionary *dict3 = [[NSMutableDictionary alloc] init];
         [dict3 setObject:@"1" forKey:@"a"];
-        
+        [dict3 setObject:@"fff" forKey:@"a"];
+        NSLog(@"%@",dict3);
         [dict3 removeAllObjects];
         [dict3 removeObjectForKey:@"a"];
         [dict3 removeObjectsForKeys:[NSArray arrayWithObjects:@"a", nil]];

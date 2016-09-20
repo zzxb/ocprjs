@@ -48,7 +48,9 @@ int main(int argc, const char * argv[]) {
         
         // ----------------可变数组NSMutableArray的基本用法
         // 创建一个可变数组
-        NSMutableArray *mtArray1 = [NSMutableArray arrayWithCapacity:50];
+//        NSMutableArray *mtArray1 = [NSMutableArray arrayWithCapacity:50];
+        NSMutableArray *mtArray1 = [[NSMutableArray alloc] init];
+        
         // 往可变数组添加一个新的元素
         [mtArray1 addObject:@"one"];
         NSObject *newObj1 = [NSObject new];
@@ -59,11 +61,15 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"mtArray afterremove:%@", mtArray1);
         // 从可变数组中移除一个元素
-        [mtArray1 removeObject:@"one2"];        NSLog(@"mtArray:%@", mtArray1);
+        [mtArray1 removeObject:@"one2"];
+        [mtArray1 removeObjectAtIndex:2];
+        NSLog(@"mtArray:%@", mtArray1);
         //在指定的索引位置插入一个新的元素
         [mtArray1 insertObject:@"one4" atIndex:2];         NSLog(@"mtArray:%@", mtArray1);
         // 替换掉指定索引位置的元素
         [mtArray1 replaceObjectAtIndex:2 withObject:@"xxxxx"];
+        
+        NSLog(@"-------%d",[mtArray1 containsObject:@"one3"]);
         
         
         // ------------------ 遍历数组。就是一个一个元素数一下

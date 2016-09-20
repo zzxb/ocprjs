@@ -481,22 +481,206 @@ NSString *str3 = [NSString stringWithFormat: @"城市信息为： %@ 市 %@ 省"
 取元素(查)
 
 ```Objective-C
-        NSLog(@"%@", array[2]);
-        // 取出相关元素的另一种写法
-        NSLog(@"%@", [array objectAtIndex:1]);
-        
-        //第一个元素
-        NSLog(@"%@", [array firstObject]);
-        //最后一个元素
-        NSLog(@"%@", [array lastObject]);
-        
+NSLog(@"%@", array[2]);
+// 取出相关元素的另一种写法
+NSLog(@"%@", [array objectAtIndex:1]);        
+//第一个元素
+NSLog(@"%@", [array firstObject]);
+//最后一个元素
+NSLog(@"%@", [array lastObject]);
+// 从一个数组提取一个子数组
+NSArray *array5 = [array2subarrayWithRange:NSMakeRange(2, 2)];
+// containsObject可以用来判断数组是否包含一个指定的元素
+if ([array4 containsObject:@"one"]) {
+   NSLog(@"array4 包含 one");
+}
+// 查出一个元素在数组中的索引位置
+NSLog(@"one 在array4中的索引位置 %lu", [array4 indexOfObject:@"three"]);        
+```
+
+新增元素生成新的数组(改)
+
+```Objective-C
+// arrayByAddingObject给一个数组对象加一个元素生成一个新的数组
+NSArray *array1 = [array arrayByAddingObject:@"four"];
+// arrayByAddingObjectsFromArray给一个数组对象加一个数组生成一个新的数组
+NSArray *array2 = [array arrayByAddingObjectsFromArray:array1];        NSLog(@"array:%@", array2);      
 ```
 
 获取大小
 
 ```Objective-C
-        NSLog(@"%lu", [array count]);
+NSLog(@"%lu", [array count]);
 ```
+
+循环
+
+```Objective-C
+
+for(NSString *var in array){
+	NSLog(@"%@",var)
+}
+
+```
+
+其他
+
+```Objective-C
+NSString *str1 = @"one:two:three:four";
+// 用一个固定的分隔符把一个字符串隔开创建一个数组
+NSArray *array4 = [str1 componentsSeparatedByString:@":"];
+```
+
+##### 可变数组(相当于List)
+
+创建
+
+```Objective-C
+// 创建一个可变数组
+NSMutableArray *mtArray2 = [NSMutableArray arrayWithCapacity:50];
+NSMutableArray *mtArray1 = [[NSMutableArray alloc] init];
+```
+
+添加元素(增)
+
+```Objective-C
+// 往可变数组添加一个新的元素
+[mtArray1 addObject:@"one"];
+NSObject *newObj1 = [NSObject new];
+[mtArray1 addObject:newObj1];
+[mtArray1 addObject:@"one1"];
+[mtArray1 addObject:@"one2"];
+[mtArray1 addObject:@"one3"];
+```
+
+获取元素(查)
+
+```Objective-C
+NSLog(@"%@", array[2]);
+// 取出相关元素的另一种写法
+NSLog(@"%@", [array objectAtIndex:1]);    
+```
+
+修改元素(改)
+
+```Objective-C
+// 替换掉指定索引位置的元素
+[mtArray1 replaceObjectAtIndex:2 withObject:@"xxxxx"];
+//在指定的索引位置插入一个新的元素
+[mtArray1 insertObject:@"one4" atIndex:2];   
+```
+
+删除元素(删除)
+
+```Objective-C
+ // 从可变数组中移除一个元素
+ [mtArray1 removeObject:@"one2"]; 
+ [mtArray1 removeObjectAtIndex:2];  
+```
+
+### ocprj7_1之NSDictionary（字典）
+
+##### 不可变字典
+
+创建
+
+```Objective-C
+#value-key的赋值,最后一个必须是nil
+NSDictionary *dictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"zzxb",@"name",@"13905310001",@"number", nil];
+#初始化一个元素
+NSDictionary *dict1 = [NSDictionary dictionaryWithObject:@"1" forKey:@"a"];
+#初始化，利用数组
+NSDictionary *dict2 = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"1",@"2",@"3", nil] forKeys:[NSArray arrayWithObjects:@"a",@"b",@"c", nil]];
+```
+
+数量
+
+```Objective-C
+int count = [dist2 count];
+```
+
+得到词典中所有KEY值/VALUE值
+
+```Objective-C
+NSArray * allKeys = [dict2 allKeys];
+NSLog(@"allKeys = %@",allKeys);
+NSArray *allValues = [dict2 allValues];
+NSLog(@"allValues = %@",allValues);
+```
+
+获取KEY对应VALUE
+
+```Objective-C
+NSString *value = [dict2 valueForKey:@"b"];
+NSLog(@"value = %@",value);
+        
+NSString *value2 = [dict2 objectForKey:@"b"];
+NSLog(@"value = %@",value2);
+```
+
+获得KEYS对应VALUES（数组）
+
+```Objective-C
+NSArray *strarray = [dict2 objectsForKeys:[NSArray arrayWithObjects:@"a",@"d",@"c", nil] notFoundMarker:@"not found"];
+NSLog(@"strarray = %@",strarray);
+```
+
+遍历之for循环
+
+```Objective-C
+for (NSString *key in dict2) {
+    NSLog(@"%@ = %@",key,[dict2 objectForKey:key]);
+}
+```
+注意：必须变量名为key
+
+遍历之枚举
+
+```Objective-C
+NSEnumerator *en = [dict2 keyEnumerator];
+id keyvalue = nil;
+while (keyvalue = [en nextObject]) {
+  NSLog(@"key:%@-value:%@",keyvalue,[dict2 valueForKey:keyvalue]);
+}
+```
+
+##### 可变字典
+
+创建
+
+```Objective-C
+NSMutableDictionary *dict3 = [[NSMutableDictionary alloc] init];
+```
+
+添加元素(增)
+
+```Objective-C
+[dict3 setObject:@"1" forKey:@"a"];
+```
+
+删除元素(删)
+
+```Objective-C
+[dict3 removeObjectForKey:@"a"];
+```
+
+获取KEY对应VALUE（查）
+
+```Objective-C
+NSString *value = [dict2 valueForKey:@"b"];
+NSLog(@"value = %@",value);
+        
+NSString *value2 = [dict2 objectForKey:@"b"];
+NSLog(@"value = %@",value2);
+```
+
+修改元素值
+
+```Objective-C
+//原来有key=a的值，再设置就相当于修改
+[dict3 setObject:@"ffff" forKey:@"a"];
+```
+
 
 ## 修改日志
 - 2016-8-29:
