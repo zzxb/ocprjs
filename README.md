@@ -681,6 +681,28 @@ NSLog(@"value = %@",value2);
 [dict3 setObject:@"ffff" forKey:@"a"];
 ```
 
+#### ocprj8之继承与多态
+
+##### OC中的继承
+
+1.OC中的继承用":"(冒号),java中用extends
+
+2.OC所有类的父类都是NSObject,而JAVA是Object
+
+3.在OC中不允许隐身继承，例如：必须每个类显示继承NSObject，而JAVA默认继承Object是隐式的
+
+例如：
+
+```Objective-C
+@interface Teacher : NSObject{
+}
+```
+
+##### oc中原则上没有重载,这与其函数语法定义有关系.
+
+##### oc中的重写与多态,同JAVA中的概念一致。
+
+##### oc中用@class实现动态后期引入,等同于java中的Class.forname();
 
 ## 修改日志
 - 2016-8-29:
