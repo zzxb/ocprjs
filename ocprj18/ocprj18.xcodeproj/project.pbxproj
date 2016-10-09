@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D17AF15A9500B2F0E4544A98 /* libPods-ocprj18.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79AB9678E60EADFACB0E2D52 /* libPods-ocprj18.a */; };
 		E67DC2BD1DAA8C5B00C1ADA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E67DC2BC1DAA8C5B00C1ADA1 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +24,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79AB9678E60EADFACB0E2D52 /* libPods-ocprj18.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ocprj18.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C69DC5A5C4C47EF82D789D0D /* Pods-ocprj18.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocprj18.release.xcconfig"; path = "Pods/Target Support Files/Pods-ocprj18/Pods-ocprj18.release.xcconfig"; sourceTree = "<group>"; };
 		E67DC2B91DAA8C5B00C1ADA1 /* ocprj18 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ocprj18; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67DC2BC1DAA8C5B00C1ADA1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3D5A7B72A0D163671AA47D7 /* Pods-ocprj18.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ocprj18.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ocprj18/Pods-ocprj18.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17AF15A9500B2F0E4544A98 /* libPods-ocprj18.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42F74D75094E43C4D2CB2EA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3D5A7B72A0D163671AA47D7 /* Pods-ocprj18.debug.xcconfig */,
+				C69DC5A5C4C47EF82D789D0D /* Pods-ocprj18.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6392AD91FF7A7833A0947EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79AB9678E60EADFACB0E2D52 /* libPods-ocprj18.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E67DC2B01DAA8C5B00C1ADA1 = {
 			isa = PBXGroup;
 			children = (
 				E67DC2BB1DAA8C5B00C1ADA1 /* ocprj18 */,
 				E67DC2BA1DAA8C5B00C1ADA1 /* Products */,
+				42F74D75094E43C4D2CB2EA2 /* Pods */,
+				6392AD91FF7A7833A0947EC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E67DC2C01DAA8C5B00C1ADA1 /* Build configuration list for PBXNativeTarget "ocprj18" */;
 			buildPhases = (
+				622A4A642F7C75933C17AD96 /* [CP] Check Pods Manifest.lock */,
 				E67DC2B51DAA8C5B00C1ADA1 /* Sources */,
 				E67DC2B61DAA8C5B00C1ADA1 /* Frameworks */,
 				E67DC2B71DAA8C5B00C1ADA1 /* CopyFiles */,
+				749287A87D7A686B639569C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -113,6 +139,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		622A4A642F7C75933C17AD96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		749287A87D7A686B639569C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ocprj18/Pods-ocprj18-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E67DC2B51DAA8C5B00C1ADA1 /* Sources */ = {
@@ -215,15 +274,19 @@
 		};
 		E67DC2C11DAA8C5B00C1ADA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D5A7B72A0D163671AA47D7 /* Pods-ocprj18.debug.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
 		E67DC2C21DAA8C5B00C1ADA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C69DC5A5C4C47EF82D789D0D /* Pods-ocprj18.release.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
@@ -246,6 +309,7 @@
 				E67DC2C21DAA8C5B00C1ADA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
