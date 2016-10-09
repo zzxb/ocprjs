@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios,'8.0'
+platform :osx,'10.11'
+
+target 'ocprj18' do
+pod 'AFNetworking', '~> 3.0'
+end
