@@ -704,6 +704,89 @@ NSLog(@"value = %@",value2);
 
 ##### oc中用@class实现动态后期引入,等同于java中的Class.forname();
 
+#### ocprj9之OC协议
+
+OC协议与JAVA中的接口概念非常相似
+
+协议常用UI开发中事件设计模式，即委托设计模式的实现.
+
+@protocol为协议定义关键字，通常协议只是定义方法（函数），所以，只有.h文件
+
+与JAVA区别，在OC中协议常用分为两块，@required(必须、要求)和@optional(可选)
+
+@required关键字下定义的方法，实现协议的类，必须实现该方法,默认的方法都是@required
+
+@optional可选关键字是指可以选择性实现或不实现
+
+OC协议中不允许定义非方法的变量
+
+所以，OC中的协议概念更加灵活，比JAVA中对接口的定义更加严谨。
+
+例如：
+
+Emp.h
+
+```Objective-C
+@protocol Emp <NSObject>
+
+//必须要实现的方法
+@required
+- (void) work;
+- (void) gongzi;
+
+//可选
+@optional
+- (void) dakai;
+
+@end
+```
+
+在OC中实现一个协议的方法:
+
+SEEmp.h
+
+```Objective-C
+//引入协议
+#import "Emp.h"
+
+@interface SEEmp : NSObject<Emp>
+
+- (void) goutong;
+
+@end
+```
+
+说明：
+
+1.利用<>(尖括号)引入协议名称，如果是实现多个协议用逗号分隔(,).
+
+2.需要实现协议中的方法，不用在.h文件再次定义。(goutong是扩展方法)
+
+协议的实例化方式：
+
+1.实例化协议的子类
+
+```Objective-C
+SEEmp *se = [[SEEmp alloc] init];
+```
+2.多态方式的实例化
+
+```Objective-C
+id<Emp> se = [[SEEmp alloc] init];
+```
+
+3.强制类型转换
+
+```Objective-C
+(SEEmp *)se
+```
+
+4.基于协议的多态
+
+```Objective-C
+- (void) tinghuibao : (id<Emp>)emp;
+```
+
 ## 修改日志
 - 2016-8-29:
 - [x] 创建演示项目,并对一些配置文件进行了注解。
