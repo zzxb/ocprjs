@@ -277,6 +277,7 @@
 			baseConfigurationReference = D9DA160BE4F9A1458A2DC45C /* Pods-ocprj18.debug.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Debug;
 		};
@@ -285,6 +286,7 @@
 			baseConfigurationReference = 86F470551014C7687573D012 /* Pods-ocprj18.release.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
 			};
 			name = Release;
 		};
