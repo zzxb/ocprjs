@@ -704,7 +704,7 @@ NSLog(@"value = %@",value2);
 
 ##### oc中用@class实现动态后期引入,等同于java中的Class.forname();
 
-#### ocprj9之OC协议
+#### ocprj10之OC协议
 
 OC协议与JAVA中的接口概念非常相似
 
@@ -785,6 +785,99 @@ id<Emp> se = [[SEEmp alloc] init];
 
 ```Objective-C
 - (void) tinghuibao : (id<Emp>)emp;
+```
+#### ocprj18之基于AFNetworking框架的异步webservice访问
+
+##### 什么是AFNetworking框架？
+
+AFNetworking是IOS和MAC OS上常用的第三方网络异步访问库，它是一个开源的，在[GITHUB](https://github.com/AFNetworking/AFNetworking)上有最新的源码和说明。
+
+##### 基于cocoapods依赖安装AFNetworking框架
+
+1.编写配置文件Podfile
+
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios,'8.0'
+platform :osx,'10.11'
+target 'ocprj18' do
+pod 'AFNetworking', '~> 3.0'
+end
+```
+
+2.执行
+
+```
+$ pod install
+```
+
+
+
+##### 使用AFNetworking框架：GET请求和POST请求的访问
+
+```Objective-C
+//GET
+AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+[manager GET:@"http://example.com/resources.json" parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+    NSLog(@"JSON: %@", responseObject);
+} failure:^(NSURLSessionTask *operation, NSError *error) {
+    NSLog(@"Error: %@", error);
+}];
+```
+
+```Objective-C
+//POST
+AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+session.requestSerializer = [AFJSONRequestSerializer serializer];
+NSMutableDictionary *params = [NSMutableDictionary dictionary];
+params[@"start"] = @"1";
+params[@"end"] = @"5";
+    
+[session POST:urlStr parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    NSLog(@"请求成功");
+} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    NSLog(@"请求成功");
+}];
+```
+
+##### 在MAC OS命令行下使用AFNetworking的说明
+由于AFNetworking是基于网络的异步访问库，而Main函数下命令行程序是同步访问，所以，需要使用NSRunLoop模拟异步。
+
+代码如下：
+
+```Objective-C
+    do {
+        @autoreleasepool
+        {
+            //在此处添加AFNetworking代码
+            [[NSRunLoop currentRunLoop] run];
+        }
+    } while (YES);
+```
+
+##### 关于AFNetworking 3.0 @"NSLocalizedDescription" :@"Request failed: unacceptable content-type: text/html"错误的解决方案
+
+1.修改AFNetworking中AFURLResponseSerialization.m文件
+
+2.在226行,将
+
+```Objective-C
+self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript", nil];
+```
+
+改成
+
+```Objective-C
+self.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/html",@"text/json", @"text/javascript", nil];
+```
+
+增加了一个 @"text/html"
+
+##### 解决JSON串在XCODE控制台显示UNICODE（乱码问题）
+
+```Objective-C
+NSData *jsonData = [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];    
+NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 ```
 
 ## 修改日志
