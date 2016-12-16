@@ -79,6 +79,15 @@ V 1.0.0
 
 ```
 
+如果想输入字符串信息，需要如下代码：<br/>
+
+```Objectvie-C
+char word[40];
+scanf("%s",word);
+NSString *info = [NSString stringWithCString:word encoding:NSUTF8StringEncoding];
+NSLog(@"%@",info);
+```
+
 6.import与include的区别：<br/>
 
 import检查是否有重复包含的类库，如果有，则忽略。<br/>
@@ -639,7 +648,7 @@ for (NSString *key in dict2) {
 ```Objective-C
 NSEnumerator *en = [dict2 keyEnumerator];
 id keyvalue = nil;
-while (keyvalue = [en nextObject]) {
+while (keyvalueue = [en nextObject]) {
   NSLog(@"key:%@-value:%@",keyvalue,[dict2 valueForKey:keyvalue]);
 }
 ```
