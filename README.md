@@ -698,7 +698,7 @@ NSLog(@"value = %@",value2);
 
 2.OC所有类的父类都是NSObject,而JAVA是Object
 
-3.在OC中不允许隐身继承，例如：必须每个类显示继承NSObject，而JAVA默认继承Object是隐式的
+3.在OC中不允许隐式继承，例如：必须每个类显示继承NSObject，而JAVA默认继承Object是隐式的
 
 例如：
 
