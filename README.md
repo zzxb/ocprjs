@@ -36,6 +36,8 @@
 10. ocprj17 这个案例是基于CocoaPods构建使用JSONKit第三包解析JSON的基本使用案例。
 11. ocprj18 这个案例是关于访问基于restful的web请求的基本使用案例。
 12. ocprj19 这个案例是介绍swift语言基础的案例。
+13. ocprj20 这个案例是关于@selector语法的基本案例
+14. ocprj21 这个案例是关于结构体的基本案例
 
 ## 开发者
 
@@ -795,6 +797,11 @@ id<Emp> se = [[SEEmp alloc] init];
 ```Objective-C
 - (void) tinghuibao : (id<Emp>)emp;
 ```
+
+#### ocprj11之委托设计模式
+
+委托模式是软件设计模式中的一项基本技巧。在委托模式中，有两个对象参与处理同一个请求，接受请求的对象将请求委托给另一个对象来处理。
+
 #### ocprj18之基于AFNetworking框架的异步webservice访问
 
 ##### 什么是AFNetworking框架？
@@ -905,4 +912,3 @@ NSString *jsonStr = [[NSString alloc] initWithData:jsonData encoding:NSUTF8Strin
 
 ------
 建议使用XCode开发工具。
-
