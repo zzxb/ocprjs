@@ -20,8 +20,8 @@
 }
 
 # pragma mark 支持@selector传递多个参数
-- (void) onTimer : (NSDictionary *)timer{
-    NSLog(@"测试！！%@,%@",[timer objectForKey:@"oldView"],[timer objectForKey:@"newView"]);
+- (void) onTimer : (NSDictionary *)data{
+    NSLog(@"测试！！%@,%@",[data objectForKey:@"oldView"],[data objectForKey:@"newView"]);
 }
 
 @end
