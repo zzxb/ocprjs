@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>你是谁?</key>
+	<array>
+		<string>老韩</string>
+		<string>你讲ios的老师</string>
+		<string>5</string>
+		<string>4</string>
+	</array>
+	<key>沈阳在哪里？</key>
+	<array>
+		<string>辽宁</string>
+		<string>东北的著名省</string>
+		<integer>10</integer>
+		<integer>8</integer>
+	</array>
+	<key>1+2=?</key>
+	<array>
+		<string>3</string>
+		<string>1+1+1=?</string>
+		<integer>20</integer>
+		<integer>10</integer>
+	</array>
+</dict>
+</plist>
