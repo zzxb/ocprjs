@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+const int TI_NUM = 3;
+
 @interface ViewController (){
     NSMutableDictionary *data;
 }
@@ -25,6 +27,8 @@
     NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"tiku" ofType:@"plist"];
     data = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
     self.tiShiLabel.hidden = YES;
+    self.answerText.delegate = self;
+    NSLog(@"%i",TI_NUM);
 }
 
 - (IBAction)onClickDisplayQuestion:(UIButton *)sender {
@@ -33,6 +37,11 @@
     NSArray *keys = [data allKeys];
     self.questionLabel.text = keys[random];
     self.isTishi.on = NO;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 - (void)onClickSubmitAnwer:(UIButton *)sender{
@@ -59,7 +68,6 @@
     self.isTishi.on = NO;
     self.tiShiLabel.hidden = YES;
     self.answerText.text = @"";
-    
 }
 
 //- (IBAction)onClickDisplayAnwer:(UIButton *)sender {
