@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>content</key>
+		<string>哼。。。，我都生气了，哄哄我！！！</string>
+		<key>icon</key>
+		<string>1.jpeg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>人生就是这么彪悍的，来吧！</string>
+		<key>icon</key>
+		<string>2.jpeg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>不当大哥好多年，痛苦啊！</string>
+		<key>icon</key>
+		<string>3.jpeg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>没有美女多么无聊啊，美女快来啊！撩撩吧！</string>
+		<key>icon</key>
+		<string>4.jpeg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>哦，搞定了！牛逼</string>
+		<key>icon</key>
+		<string>5.jpeg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>黑社会啥的，都不怕，你给我等着哈，我的兄弟一大堆，别跑，千万别跑。</string>
+		<key>icon</key>
+		<string>6.jpeg</string>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>别看了，多不好意思！么么哒</string>
+		<key>icon</key>
+		<string>7.jpeg</string>
+	</dict>
+</array>
+</plist>
