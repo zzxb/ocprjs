@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+- (IBAction)addLxr:(UIBarButtonItem *)sender;
+- (IBAction)removeLxr:(UIBarButtonItem *)sender;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *removeBar;
 
 
 @end
