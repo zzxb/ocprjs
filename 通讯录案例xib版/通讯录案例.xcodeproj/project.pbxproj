@@ -23,6 +23,7 @@
 		E6DC09981ED1CA7B004B2C2D /* 017.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6DC098F1ED1CA7B004B2C2D /* 017.jpg */; };
 		E6DC09991ED1CA7B004B2C2D /* 018.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6DC09901ED1CA7B004B2C2D /* 018.jpg */; };
 		E6DC099A1ED1CA7B004B2C2D /* 019.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6DC09911ED1CA7B004B2C2D /* 019.jpg */; };
+		E6E829511ED3214A00559200 /* row.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E829501ED3214A00559200 /* row.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		E6DC098F1ED1CA7B004B2C2D /* 017.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 017.jpg; sourceTree = "<group>"; };
 		E6DC09901ED1CA7B004B2C2D /* 018.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 018.jpg; sourceTree = "<group>"; };
 		E6DC09911ED1CA7B004B2C2D /* 019.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 019.jpg; sourceTree = "<group>"; };
+		E6E829501ED3214A00559200 /* row.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = row.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				E6D5AA501EC0753700CCB1B0 /* LaunchScreen.storyboard */,
 				E6D5AA531EC0753700CCB1B0 /* Info.plist */,
 				E6D5AA421EC0753700CCB1B0 /* Supporting Files */,
+				E6E829501ED3214A00559200 /* row.xib */,
 			);
 			path = "通讯录案例";
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				E6D5AA4F1EC0753700CCB1B0 /* Assets.xcassets in Resources */,
 				E6DC09921ED1CA7B004B2C2D /* 011.jpg in Resources */,
 				E6DC09991ED1CA7B004B2C2D /* 018.jpg in Resources */,
+				E6E829511ED3214A00559200 /* row.xib in Resources */,
 				E6DC09961ED1CA7B004B2C2D /* 015.jpg in Resources */,
 				E6DC09951ED1CA7B004B2C2D /* 014.jpg in Resources */,
 				E6DC09941ED1CA7B004B2C2D /* 013.jpg in Resources */,

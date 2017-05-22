@@ -61,37 +61,9 @@
 }
 
 - (UIView *)createView{
-    UIView *row = [[UIView alloc] init];
-    row.backgroundColor = [UIColor redColor];
-    
-    UIButton *icon = [[UIButton alloc] init];
-    icon.frame = CGRectMake(20,5, 40, 40);
-    
-    int random = arc4random_uniform(9);
-    
-    NSString *imageName = [NSString stringWithFormat:@"01%d.jpg",random];
-    
-    [icon setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
-    
-    UILabel *content = [[UILabel alloc] init];
-    content.frame = CGRectMake(0, 0,375, 50);
-    content.text = lxrNames[random];
-    content.textAlignment = NSTextAlignmentCenter;
-    [row addSubview:content];
-
-    [row addSubview:icon];
-    
-    UIButton *delBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    
-    delBtn.frame = CGRectMake(300, 0, 50, 50);
-    
-    [delBtn setTitle:@"删除" forState:UIControlStateNormal];
-    
-    [row addSubview:delBtn];
-    
-    [icon addTarget:self action:@selector(onClickBtn :) forControlEvents:UIControlEventTouchUpInside];
-    
-    [delBtn addTarget:self action:@selector(onClickDelBtn:) forControlEvents:UIControlEventTouchUpInside];
+    UIView *row = [[NSBundle mainBundle] loadNibNamed:@"row" owner:self options:nil][0];
+//    UIButton *delBtn = [row viewWithTag:3];
+//    [delBtn addTarget:self action:@selector(onClickDelBtn:) forControlEvents:UIControlEventTouchUpInside];
     return row;
 }
 
