@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    NSArray *proinces;
+}
 
 @end
 
@@ -23,67 +25,70 @@
     
     table.dataSource = self;
     
+    proinces = @[
+                 @{
+                     @"header":@"山东省",
+                     @"foot":@"好城市",
+                     @"data":@[
+                             @"济南市",@"青岛市",@"烟台市",@"聊城市"
+                             ]
+                     },
+                 @{
+                     @"header":@"辽宁省",
+                     @"foot":@"更好城市",
+                     @"data":@[
+                             @"沈阳市",@"大连市",@"盘锦市"
+                             ]
+                     }
+                 ];
+    
+    
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return proinces.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectio
 {
-    if(sectio == 0){
-        return 4;
-    }
-    return 3;
+    
+    NSDictionary *p = proinces[sectio];
+    
+    NSArray *citys = p[@"data"];
+    
+    return citys.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
     
-    NSString *content = @"";
+    NSDictionary *pp = proinces[indexPath.section];
     
-    if(indexPath.section == 0){
-        switch (indexPath.row) {
-            case 0:
-                content = @"济南";
-                break;
-            case 1:
-                content = @"青岛";
-                break;
-            case 2:
-                content = @"烟台";
-                break;
-                
-            case 3:
-                content = @"聊城";
-                break;
-            default:
-                break;
-        }
-    }else{
-        switch (indexPath.row) {
-            case 0:
-                content = @"沈阳";
-                break;
-            case 1:
-                content = @"大连";
-                break;
-            case 2:
-                content = @"盘锦";
-                break;
-            default:
-                break;
-        }
-    }
+    NSArray *cities = pp[@"data"];
     
-    cell.textLabel.text = content;
+    cell.textLabel.text = cities[indexPath.row];
     
     //NSLog(@"%i---------%i",indexPath.section,indexPath.row);
     return cell;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    NSDictionary *pp = proinces[section];
+    NSString *cities = pp[@"header"];
+    return cities;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
+    NSDictionary *pp = proinces[section];
+    NSString *cities = pp[@"foot"];
+    return cities;
+}
+
+- (NSArray<NSString *> *)sectionIndexTitlesForTableView:(UITableView *)tableView{
+    return @[@"山东",@"辽宁"];
+}
 
 
 @end
