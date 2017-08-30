@@ -1,0 +1,5 @@
+platform :ios,'8.0'
+target '网络之AFNetworking' do
+pod 'AFNetworking', '~> 3.1'
+pod 'YYModel'
+end
